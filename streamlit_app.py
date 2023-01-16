@@ -43,7 +43,8 @@ streamlit.dataframe(my_data_rows)
 
 streamlit.header("Snowflake DB Fruit Advice!")
 
-fruit_choice = streamlit.text_input('What fruit would you like information about?','cherry')
-streamlit.write('The user entered ', fruit_choice)
+add_my_fruit = streamlit.text_input('What fruit would you like information about?','cherry')
+streamlit.write('Thanks for adding  ', add_my_fruit)
+my_cur.execute("insert into fruit_load_list values ('from streamlit')")
 
 
