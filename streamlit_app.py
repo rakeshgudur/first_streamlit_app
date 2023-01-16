@@ -39,7 +39,7 @@ try:
     streamlit.dataframe(back_from_function)
 
 except URLError as e:
-  streamlist.error()
+  streamlit.error()
     
 
 
