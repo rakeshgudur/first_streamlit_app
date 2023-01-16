@@ -39,4 +39,11 @@ my_data_rows = my_cur.fetchall()
 streamlit.header("Fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 
+# New section to enter fruit text
+
+streamlit.header("Snowflake DB Fruit Advice!")
+
+fruit_choice = streamlit.text_input('What fruit would you like information about?','cherry')
+streamlit.write('The user entered ', fruit_choice)
+
 
